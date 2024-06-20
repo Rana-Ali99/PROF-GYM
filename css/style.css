@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body{
+    background-color: #f7f3f3;
+   
+}
+.container{
+    width: 780px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+  }
+
+
+.one a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.one{
+    width: 50%;
+    height: 100%;
+    border: solid 1px #f06412;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.one form{
+    margin: 35px 15%;
+}
+
+.one .btn{
+    padding: 10px 102px;
+    border: none;
+    outline: none;
+    margin: 15px 0;
+    background: #f06412;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 20px; 
+    transition: 0.3s;
+}
+
+.one input{
+    width: 250px;
+    height: 35px;
+    margin: 15px 0;
+    background: none;
+    border: #f06412 solid 1px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.one h1{
+    text-align: center;
+    padding: 10%;
+    color: #f06412;
+    transition: 0.3s;
+}
+
+.one:hover h1{
+    color: #000000;
+    background: #f06412;
+    border-radius: 0 0 50% 50% ;
+}
+
+.one:hover{
+    border: #f06412 solid 1px;
+    box-shadow: #f06412 0 3px 8px 3px;
+}
+
+::placeholder{
+    margin-left: 10px;
+    padding: 10px;
+    color: #f06412;
+}
+
+/* END */
+
+.two{
+    width: 50%;
+    height: 100%;
+    border: solid 1px #f06412;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.two h1{
+    text-align: center;
+    padding: 10%;
+    color: #f06412;
+    transition: 0.3s;
+}
+
+.two:hover h1{
+    color: #000000;
+    background: #f06412;
+    border-radius: 0 0 50% 50% ;
+}
+
+.two:hover{
+    border: #f06412 solid 1px;
+    box-shadow: #f06412 0 3px 8px 3px;
+}
+
+.two form{
+    margin: 35px 15%;
+}
+ 
+.two input{
+    width: 250px;
+    height: 35px;
+    margin: 10px 0;
+    background: none;
+    border: #f06412 solid 1px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.two .btn{
+    padding: 10px 102px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    background: #f06412;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #0c0c0c;
+    color: #ffffff;
+    /* border: #000000 solid 1px; */
+}  
+
+input:hover{
+    border: #080808 solid 1px;
+
+}

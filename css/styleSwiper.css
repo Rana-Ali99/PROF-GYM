@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+
+
+:root {
+  --main-color: #f14901;
+}
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.title{
+  text-align: center;
+  font-size: 25px;
+}
+.line {
+  width: 60px;
+  height: 3px;
+  display: block;
+  background-color: var(--main-color);
+  margin: 0 auto 70px auto;
+}
+.womenSection {
+  position: relative;
+  height: 100%;
+}
+.swiper {
+  max-width: 60%;
+  overflow: visible;
+  position: absolute;
+  top: 350%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #b8b8b88f, #0000005e);
+}
+
+.swiper-slide-active::after {
+  background: none;
+}
+
+.swiper-slide>div {
+  text-align: center;
+  display: none;
+  opacity: 0;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-slide h2 {
+  font-size: 1.2rem;
+  font-family: "Libre Baskerville", serif;
+  position: relative;
+}
+
+.swiper-slide h2::after {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 50%;
+}
+
+@keyframes line {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.swiper-slide-active h2::after {
+  animation: line 0.5s linear forwards;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0px 3px 17px rgb(0 0 0 / 25%);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+@media (min-width: 768px) {
+  .swiper-slide h2 {
+    font-size: 2rem;
+  }
+}
+
+/* menSection */
+.men {
+  margin-top: 650px;
+}
+.swiper-men{
+  max-width: 60%;
+  overflow: visible;
+  position: absolute;
+  top: 260%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.children{
+  margin-top: 1300px;
+}
+.swiper-child{
+  max-width: 60%;
+  overflow: visible;
+  position: absolute;
+  top: 380%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+.child-title{
+  padding-top : 200px ;
+}
